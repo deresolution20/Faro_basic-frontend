@@ -100,3 +100,28 @@ Server Start: The file starts the server by calling app.listen() and passing the
 
 In summary, the server.js file sets up the backend server using Express, establishes a connection to the MongoDB database, defines routes for handling incoming requests, and performs database operations accordingly. It acts as the bridge between the frontend interface and the database, enabling the storage of user data and handling form submissions.
 <br> <br>
+
+Run the server with:
+
+```
+node server.js
+```
+
+<br> </br>
+Check Grafana Faro and you should start to see metrics.  Load your frontend page using the URL and port of your GCP VM and start submitting data and clicking the error button.
+
+</br>
+
+![Greenshot 2023-05-30 09 26 33](https://github.com/deresolution20/Faro_basic-frontend/assets/85902399/7c0689f4-1194-461c-8221-0f0b92766f73)
+
+</br>
+
+Check the traces in Tempo
+
+![Greenshot 2023-05-30 09 27 15](https://github.com/deresolution20/Faro_basic-frontend/assets/85902399/70fe399c-2c4c-454c-87b3-696029307671)
+
+</br>
+
+And check the logs in Loki
+
+![Greenshot 2023-05-30 09 27 44](https://github.com/deresolution20/Faro_basic-frontend/assets/85902399/cc729aed-297e-449f-b15f-5765a2b3342c)
